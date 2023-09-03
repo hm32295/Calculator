@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background:#7fe0e4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > div{
+    height: 400px;
+    background-color: black;
+    width: 300px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px;
+
+
+}
+input,.input {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+header,footer,section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+header .input{
+    cursor:text;
+    background-color: #fff;
+    height: 50px;
+    color: #000;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+header .input,footer input{
+    padding: 10px;
+    width: 100%;
+    font-size: 25px;
+    direction: rtl;
+}
+section input {
+    width: calc((calc(100% - 40px) / 4) );
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    overflow: auto;
+}
+section input[value= "C"]{
+    background-color: red;
+    color: #fff;
+}
+footer input{
+    background-color:rgb(235, 146, 13);
+    color: #fff;
+}
+.click{
+    opacity: .9;
+}
